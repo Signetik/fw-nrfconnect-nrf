@@ -31,8 +31,8 @@ manifest:
       url-base: https://github.com/ARMmbed
     - name: civetweb
       url-base: https://github.com/civetweb
-    - name: signetik
-      url-base: git@git.signetik.com:signetik-iot
+    - name: signetikpub
+      url-base: https://github.com/Signetik
 
   # The list of external projects for the nRF Connect SDK.
   #
@@ -41,10 +41,10 @@ manifest:
       repo-path: fw-nrfconnect-zephyr
       west-commands: scripts/west-commands.yml
       revision: feature/signetik-cellular
-      remote: signetik
-    - name: signetik
-      repo-path: sensor/cellular-iot
-      remote: signetik
+      remote: signetikpub
+    - name: signetik-iot-pub
+      repo-path: signetik-iot
+      remote: signetikpub
     - name: nffs
       revision: bc62a2fa9d98ddb5d633c932ea199bc68e10f194
       path: modules/fs/nffs
