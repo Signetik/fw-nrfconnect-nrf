@@ -40,6 +40,8 @@ function(image_board_selection board_in board_out)
   # secure/non-secure property rather than using a separate board definition.
   set(nonsecure_boards_with_ns_suffix
     nrf9160_pca10090ns
+    signetik_sigcellns
+    signetik_sigcell_modemns
     nrf9160_pca20035ns
     nrf5340_dk_nrf5340_cpuappns
     )
