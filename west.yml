@@ -45,6 +45,7 @@ manifest:
     - name: signetik
       repo-path: sensor/cellular-iot
       remote: signetik
+      revision: feature/ncs-1.2
     - name: segger
       revision: 6fcf61606d6012d2c44129edc033f59331e268bc
       path: modules/debug/segger
