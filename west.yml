@@ -40,8 +40,7 @@ manifest:
     - name: zephyr
       repo-path: fw-nrfconnect-zephyr
       west-commands: scripts/west-commands.yml
-#revision: v2.1.99-ncs1
-      revision: feature/signetik-cellular
+      revision: feature/signetik-cellular-2.1.99-ncs1
       remote: signetik
     - name: signetik
       repo-path: sensor/cellular-iot
