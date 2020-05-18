@@ -9,7 +9,7 @@
 #include <lwm2m_carrier.h>
 
 #ifdef CONFIG_LWM2M_CARRIER_USE_CUSTOM_BOOTSTRAP_URI
-#include <bootstrap_psk.h>
+// #include <bootstrap_psk.h>
 #endif
 
 #define LWM2M_CARRIER_THREAD_STACK_SIZE 8192
@@ -30,8 +30,8 @@ void lwm2m_carrier_thread_run(void)
 
 #ifdef CONFIG_LWM2M_CARRIER_USE_CUSTOM_BOOTSTRAP_URI
 	config.bootstrap_uri = CONFIG_LWM2M_CARRIER_CUSTOM_BOOTSTRAP_URI;
-	config.psk = (char *)bootstrap_psk;
-	config.psk_length = sizeof(bootstrap_psk);
+	// config.psk = (char *)bootstrap_psk;
+	// config.psk_length = sizeof(bootstrap_psk);
 #endif
 
 	err = lwm2m_carrier_init(&config);
