@@ -33,6 +33,8 @@ manifest:
       url-base: https://github.com/nanopb
     - name: alexa
       url-base: https://github.com/alexa
+    - name: signetik
+      url-base: git@git.signetik.com:signetik-iot
 
   # If not otherwise specified, the projects below should be obtained
   # from the ncs remote.
@@ -42,6 +44,10 @@ manifest:
   # "projects" is a list of git repositories which make up the NCS
   # source code.
   projects:
+    - name: lora_iot
+      repo-path: sensor/lora-iot
+      remote: signetik
+      revision: develop
 
     # The Zephyr RTOS fork in the NCS, along with the subset of its
     # modules which NCS imports directly.
