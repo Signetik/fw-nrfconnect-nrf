@@ -47,7 +47,7 @@ manifest:
     - name: lora_iot
       repo-path: lora-iot
       remote: signetik
-      revision: develop
+      revision: develop-public
 
     # The Zephyr RTOS fork in the NCS, along with the subset of its
     # modules which NCS imports directly.
