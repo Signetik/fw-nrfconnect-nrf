@@ -34,7 +34,7 @@ manifest:
     - name: alexa
       url-base: https://github.com/alexa
     - name: signetik
-      url-base: git@git.signetik.com:signetik-iot
+      url-base: git@github.com:Signetik
 
   # If not otherwise specified, the projects below should be obtained
   # from the ncs remote.
@@ -45,7 +45,7 @@ manifest:
   # source code.
   projects:
     - name: lora_iot
-      repo-path: sensor/lora-iot
+      repo-path: lora-iot
       remote: signetik
       revision: develop
 
