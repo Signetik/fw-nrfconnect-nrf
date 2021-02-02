@@ -35,6 +35,8 @@ manifest:
       url-base: https://github.com/alexa
     - name: signetik
       url-base: git@github.com:Signetik
+    - name: safetraces
+      url-base: git@git.signetik.com:SafeTraces
 
   # If not otherwise specified, the projects below should be obtained
   # from the ncs remote.
@@ -48,6 +50,12 @@ manifest:
       repo-path: lora-iot
       remote: signetik
       revision: develop-public
+
+    - name: veridart
+      repo-path: lora-iot
+      remote: safetraces
+      revision: master
+      path: modules/app/veridart
 
     # The Zephyr RTOS fork in the NCS, along with the subset of its
     # modules which NCS imports directly.
@@ -94,6 +102,7 @@ manifest:
           - tinycbor
           - tinycrypt
           - trusted-firmware-m
+          - veridart
 
     # NCS repositories.
     #
